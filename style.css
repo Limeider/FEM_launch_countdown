@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    image-rendering: optimizeSpeed;
+}
+
+.main-wrapper {
+    background: url(./images/bg-stars.svg) center/cover no-repeat;
+    height: 100vh;
+    height: 100dvh;
+    background-color: hsl(235, 16%, 14%);
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.time-sections-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.display-area {
+    width: 150px;
+    height: 150px;
+    background-color: hsl(236, 21%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: hsl(345, 95%, 68%);
+}
+
+.subtitle {
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.hills-pattern {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.social-links-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    display: flex;
+    gap: 2rem;
+}
+
+.social-link:hover {
+    cursor: pointer;
+    filter: hue-rotate(80deg);
+}
+
+@media only screen and (max-width: 750px) {
+    .time-sections-container {
+        gap: 1rem;
+    }
+
+    .display-area {
+        width: 100px;
+        height: 100px;
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .time-sections-container {
+        gap: 0.5rem;
+    }
+
+    .display-area {
+        width: 75px;
+        height: 75px;
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .display-area {
+        width: 69px;
+        height: 69px;
+        font-size: 2.125rem;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+}
